@@ -1,5 +1,6 @@
 # 考试安排-mock
 
+mock 路径: 考试报名 > 我的考试 > 考试安排查询
 
 ```js
 const list = [
