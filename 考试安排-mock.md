@@ -57,6 +57,24 @@ function buildTr(data) {
 			<td><a href="javascript:0">备注</a></td>
 		</tr>`
 }
+
+const header = `
+<tr>
+	<th class="Nsb_r_list_thb" style="width: 40px;">序号</th>
+	<th class="Nsb_r_list_thb" style="width: 100px;">校区</th>
+	<th class="Nsb_r_list_thb" style="width: 100px;">考试校区</th>
+	<th class="Nsb_r_list_thb" style="width: 120px;">考试场次</th>
+	<th class="Nsb_r_list_thb" style="width: 120px;">课程编号</th>
+	<th class="Nsb_r_list_thb" style="width: 200px;">课程名称</th>
+	<th class="Nsb_r_list_thb" style="width: 150px;">授课教师</th>
+	<th class="Nsb_r_list_thb" style="width: 110px;">考试时间</th>
+	<th class="Nsb_r_list_thb" style="width: 140px;">考场</th>
+	<th class="Nsb_r_list_thb" style="width: 60px;">座位号</th>
+	<th class="Nsb_r_list_thb" style="width: 120px;">准考证号</th>
+	<th class="Nsb_r_list_thb" style="width: 120px;">备注</th>
+	<th class="Nsb_r_list_thb" style="width: 50px;">操作</th>
+</tr>
+`
 const dataEl = document.querySelector('#dataList tbody')
-dataEl.innerHTML += data.map(buildTr).join('')
+dataEl.innerHTML = header + data.map(buildTr).join('')
 ```
